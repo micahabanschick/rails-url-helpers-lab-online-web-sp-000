@@ -28,7 +28,7 @@ gem 'rspec-core'
 
 
 group :development, :test do
-  gem 'byebug'
+  gem 'byebug', '~>3.5.0'
   gem 'spring'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
