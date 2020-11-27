@@ -1,16 +1,18 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: :show
-  
+
   def index
     @students = Student.all
   end
 
   def show
-    @student = set_student 
+    @student = set_student
   end
 
   def activate
-  end 
+    set_student.active == false ? set_student.active = true : set_student.active = false
+    set_student.save
+  end
 
   private
 

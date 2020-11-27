@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
-gem 'rspec-core'
+# gem 'rspec-core'
 
 
 group :development, :test do
