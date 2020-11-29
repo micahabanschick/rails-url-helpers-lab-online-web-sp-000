@@ -12,8 +12,9 @@ class StudentsController < ApplicationController
   def activate
     set_student.active == false ? set_student.active = true : set_student.active = false
     # set_student.save
-    head :ok
+    # head :ok
     # render :nothing => true
+    redirect to student_path(set_student.id)
   end
 
   private
