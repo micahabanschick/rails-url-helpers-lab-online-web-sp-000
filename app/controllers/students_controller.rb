@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    set_student.active == false ? set_student.active = true : set_student.active = false
+    set_student.active == nil ? set_student.active = true : set_student.active = false
     # set_student.save
     # head :ok
     # render :nothing => true
