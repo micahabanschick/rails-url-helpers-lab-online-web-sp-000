@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   def activate
     set_student.active == false ? set_student.active = true : set_student.active = false
     set_student.save
-  
+
     redirect_to student_path(set_student.id)
   end
 
