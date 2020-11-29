@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
     # set_student.save
     # head :ok
     # render :nothing => true
-    redirect to student_path(set_student.id)
+    redirect_to student_path(set_student.id)
   end
 
   private
